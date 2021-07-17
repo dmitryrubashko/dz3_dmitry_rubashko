@@ -1,11 +1,10 @@
 // Помощники
-//@import 'mixins/mixins';//миксины scss
-//@import 'main/stylesheet';// шрифты
-//@import 'main/parameters';// переменные
+//@import 'utils/parameters';// переменные
+//@import 'utils/mixins';//миксины scss
 
 //Общее
+//@import 'main/stylesheet';// шрифты
 //@import 'main/reset'; // сброс стилей для кроссбраузерности
 //@import 'main/common'; // общие стили
-//@import 'main/grid'; // базовая 12ти колоночная сетка для сайта(сделана на основе bootstrap), классы .container/.row/.col-md-6 и т.д.
 
 // дальше можно писать все стили сайта в этот файл, или писать их в компонентах

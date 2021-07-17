@@ -28,10 +28,8 @@ gulp.task('default',
 		gulp.parallel(
 			'pug',
 			'scss:dev',
-			'scripts:dev',
 			'images:dev',
 			'svg',
-			'vendors:js',
 			'favicon',
 		),
 		gulp.parallel(
