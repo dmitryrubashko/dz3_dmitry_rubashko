@@ -1,8 +1,8 @@
-@function lineheight($fsz,$lh) {
-    @return ($lh / $fsz);
-}
-
-@mixin lineheight($fsz,$lh) {
-    line-height: fsz-to-lh($fsz,$lh);
+// пример миксина
+@mixin title() {
+    color: red;
+    font-size: 36px;
+    line-height: 42px;
+    margin: 0 0 1rem;
 }
   
