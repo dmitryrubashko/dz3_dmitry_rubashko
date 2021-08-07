@@ -1,0 +1,75 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.first-section {
+
+    background-color: $c-secondary;
+    
+    .container {
+        position: relative;
+    }
+
+    &__content {
+        max-width: 55.7rem;
+        padding: 20rem 0 5rem;
+        min-height: 72rem;
+    }
+
+    &__title {
+        color: $c-text;
+        font-weight: bold;
+        font-size: 5.5rem;
+        line-height: 138%;
+        letter-spacing: 0.111rem;
+        margin: 0 0 5rem;
+
+    }
+
+    &__link {
+        
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.9rem 2.8rem;
+        background: $c-primary;
+        border: 1px solid $c-primary;
+        box-shadow: 0px 3px 18px rgba(0, 201, 201, 0.55);
+        border-radius: 1.4rem;
+
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: $c-text;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0);
+            color: $c-text;
+        }
+
+        span {
+
+        }
+
+        img {
+            margin-left: 1rem;
+        }
+        
+    }
+
+    &__img {
+
+        position: absolute;
+        right: -7rem;
+        bottom: 0;
+        
+    }
+
+    .primary {
+        color: $c-primary;
+        display: block;
+    }
+
+    .orange {
+        color: #F3AF47;
+    }
+
+}
