@@ -4,6 +4,7 @@
 .first-section {
 
     background-color: $c-secondary;
+    overflow: hidden;
     
     .container {
         position: relative;
@@ -60,6 +61,7 @@
         position: absolute;
         right: -7rem;
         bottom: 0;
+        max-width: 57vw;
         
     }
 
@@ -72,4 +74,54 @@
         color: #F3AF47;
     }
 
+}
+
+@media screen and (max-width: $md) {
+    .first-section {
+        &__title {
+            font-size: 5rem;
+        }
+
+        &__img {
+            right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .first-section {
+        &__content {
+            padding: 13rem 0 5rem;
+            min-height: 50rem;
+        }
+
+        &__title {
+            font-size: 4rem;    
+            max-width: 40rem;
+        }
+    }
+
+}
+
+@media screen and (max-width: $xs) {
+    .first-section {
+        &__content {
+            min-height: auto;
+            padding: 14rem 0 0;
+        }
+
+        &__title {
+            font-size: 3rem;
+            margin: 0 0 3rem;
+        }
+
+        &__link {
+            padding: 1.2rem 1.5rem;
+        }
+
+        &__img {
+            position: static;
+            max-width: 100%;
+        }
+    }
 }
