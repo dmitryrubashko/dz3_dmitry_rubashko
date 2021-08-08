@@ -1,0 +1,142 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.order-info {
+    
+    .container {
+        position: relative;
+    }
+
+    &__content {
+        background-color: $c-secondary;
+        min-height: 54rem;
+        border-radius: 5rem;
+    }
+    
+    &__img {    
+        position: absolute;
+        margin-left: 3rem;
+        margin-top: -5rem;
+    }
+
+    .daily {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        color: $c-text2;
+    }
+
+    h2 {
+        font-weight: 900;
+        font-size: 4rem;
+        line-height: 138%;
+        color: $c-text;
+        max-width: 20rem;
+        margin-top: 2.2rem;
+    }
+
+    .food {
+        font-size: 1.6rem;
+        line-height: 150%;
+        color: $c-text2;
+        max-width: 41.4rem;
+        margin-top: 2.1rem;
+    }
+
+    .how-to-work {
+        position: absolute;
+        right: 13rem;
+        top: 11.5rem;
+    }
+}
+
+@media screen and (max-width: $md) {
+    .order-info {
+        .how-to-work {
+            right: 10%;
+            max-width: 35rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+            max-width: 25rem;
+        }
+
+        &__img {    
+            left: 0;
+            width: 50%;   
+        }
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .order-info {
+        
+
+        &__img {    
+            left: 0;
+            width: 95%;   
+            overflow: hidden;
+        } 
+
+        &__content {
+            min-height: 34rem;
+            border-radius: 3rem;
+            max-width: 50rem;
+            margin: 3rem auto;
+        }
+
+        .how-to-work {
+            right: 7%;
+            top: 7rem;
+            position: static;
+            padding: 3rem;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 3rem;
+            margin-top: 1rem;
+        }
+
+        .daily {
+            font-size: 3rem;
+        }
+
+        .food {
+            font-size: 2rem;
+            max-width: 28rem;
+            margin-top: 1rem;
+        }
+        
+        &__img {
+            position: static;
+        }
+
+    }
+}
+
+@media screen and (max-width: $xs) {
+    .order-info {  
+        
+        .daily {
+            font-size: 2rem;
+        }
+
+        .how-to-work {
+            text-align: center; 
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        .food {
+            font-size: 1.4rem;
+        }
+
+        &__content {
+            border-radius: 2rem;
+            min-height: 25rem;
+        }
+    }
+}
